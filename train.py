@@ -69,7 +69,7 @@ SP = nor(SP)
 leraning_rate=0.0001
 hidden_size = 512
 num_epochs = 1000
-morgan_dim = 1024
+morgan_dim = 2048
 dru = np.loadtxt('./'+jihe+'/drug.txt', dtype=str, comments=None)
 pro = np.loadtxt('./'+jihe+'/protein.txt', dtype=str)
 
