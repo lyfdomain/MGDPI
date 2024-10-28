@@ -7,6 +7,6 @@
 
 3.Ran net_infer.py to obtain new drug protein interaction matrix based on network information.
 
-4.Run train.py to get the pre-train model and evalation the result.
+4.Run train.py and eval.py to get the pre-train model and evalation the result.
 
 
