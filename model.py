@@ -8,14 +8,14 @@ class Autoencoder(nn.Module):
             nn.Linear(input_size, 2048),  # 隐藏层1
             nn.BatchNorm1d(2048),
             nn.ReLU(),
-            nn.Linear(2048, hidden_size),  # 隐藏层2
+            nn.Linear(512, hidden_size),  # 隐藏层2
             nn.Tanh(),
         )
         self.decoder = nn.Sequential(
             nn.Linear(input_size2, 2048),  # 隐藏层1
             nn.BatchNorm1d(2048),
             nn.ReLU(),
-            nn.Linear(2048, hidden_size),  # 隐藏层2
+            nn.Linear(512, hidden_size),  # 隐藏层2
             nn.Tanh(),
         )
     def forward(self, x, y):
